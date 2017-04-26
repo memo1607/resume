@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>轮播</title>
+  <style>
+    ul,li,a,img{
+    margin:0;
+    padding:0;
+    text-decoration: none;
+    list-style: none;
+  }
+body{
+    background:#eee;
+}
+.container{
+  position:relative;
+  border:1px solid #ccc;
+  width: 500px;
+  height:300px;
+  overflow: hidden;
+  margin: 168px auto;
+  
+}
+
+img{
+  width: 500px;
+  height:300px;
+  }
+.imgs>li{
+position: absolute;
+  }
+
+.dots{
+  position: absolute;
+  bottom:10px;
+  left:50%;
+  transform: translateX(-50%);
+}
+.dots>li{
+  width:20px;
+  height:8px;
+  margin:0 5px;
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0.7);
+  display: inline-block;
+  cursor: pointer;
+}
+.dots>li.active{
+  background: rgba(255, 255, 255, 0.7);
+}
+.arrows .left{
+  left:10px;
+}
+.arrows .right{
+  right:10px;
+}
+.arrows>li{
+  width:30px;
+  height:30px;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  text-align: center;
+  line-height:30px;
+  font-size:20px;
+  font-weight: bolder;
+  position: absolute;
+  top:50%;
+  margin-top:-15px;
+  color:#fff;
+}
+.arrows>li>a{
+  color:#fff;
+}
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <ul class="imgs fix">
+      <li><a href="##"><img src="http://unsplash.it/500/300?random=1"  alt="" /></a></li>
+      <li><a href="##"><img src="http://unsplash.it/500/300?random=2"  alt="" /></a></li>
+      <li><a href="##"><img src="http://unsplash.it/500/300?random=3"  alt="" /></a></li>
+      <li><a href="##"><img src="http://unsplash.it/500/300?random=4"  alt="" /></a></li>
+    </ul>
+
+    <ul class="arrows">
+      <li class="left">  < </li>
+      <li class="right"> > </li>
+    </ul>
+
+    <ul class="dots">
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+    </ul>
+
+  </div>
+  <script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script>
+   var $ct = $('.imgs'),
+     $img = $ct.children(),
+     $dots=$('.dots').children(),
+     $pre = $('.left'),
+     $next = $('.right'),    
+     imgWidth = $img.width(),
+     imgLength = $img.size();
+ 
+ var curidx = 0;
+ var lock = false;
+ 
+
+ $next.on('click',function(){
+   playNext();
+ });
+ $pre.on('click',function(){
+   playPre();
+ });
+ $dots.on('click',function(){
+   play($(this).index());
+ });
+
+ play(0);
+ autoPlay();
+ 
+
+
+ function playNext(){
+   play((curidx+1)%imgLength);
+ }
+ function playPre(){
+   play((imgLength+curidx-1)%imgLength);
+ }
+ function play(page){
+   if(lock) return;
+   lock = true;
+   $img.eq(curidx).fadeOut(500);
+   $img.eq(page).fadeIn(500,function(){
+     lock = false;
+   });
+   curidx = page ;
+   dots();
+   
+ }
+
+ function dots(){
+   $dots.removeClass('active')
+        .eq(curidx).addClass('active');
+ }
+
+ function autoPlay(){
+   clock = setInterval(function(){
+     playNext();
+   },2000);
+ }
+ function stopauto(){
+   clearInterval(clock);
+ }
+  </script>
+
+
+
+  	
+</body>
+</html>

@@ -1,0 +1,423 @@
+/*基本*/
+*{
+  margin:0;
+  padding:0;
+  font-size:14px;
+  font-family:Microsoft YaHei;
+}
+a{
+  text-decoration:none;
+  color:#333;
+}
+li{ 
+  list-style:none;
+  float:left;
+}
+ul:after{
+  content:" ";
+  display:block;
+  clear:both;
+}
+.clearfix:after{
+  content:" ";
+  clear:both;
+  display:block;
+}
+/*图标*/
+
+@font-face {
+  font-family: 'iconfont';  /* project id 284139 */
+  src: url('http://at.alicdn.com/t/font_6exs10ch115opqfr.eot');
+  src: url('http://at.alicdn.com/t/font_6exs10ch115opqfr.eot?#iefix') format('embedded-opentype'),
+  url('http://at.alicdn.com/t/font_6exs10ch115opqfr.woff') format('woff'),
+  url('http://at.alicdn.com/t/font_6exs10ch115opqfr.ttf') format('truetype'),
+  url('http://at.alicdn.com/t/font_6exs10ch115opqfr.svg#iconfont') format('svg');
+}
+.iconfont{
+    font-family:"iconfont" !important;
+    font-size:29px;font-style:normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale;}
+.tab i{
+  line-height:50px;
+  display:block;
+}
+.tab{
+  text-align:center;
+}
+/*背景*/
+ .wapper{
+   position: absolute;      
+   width: 100%;
+   height: 100%;
+   background: linear-gradient(45deg, rgba(75, 65, 45, .3), rgba(123, 456, 789, .5), rgba(854, 183, 729, .5));             
+ }       
+.item{
+  background:#ffe;
+  width:800px;
+  height:550px;
+  margin:50px auto 0;
+  border:11px solid rgba(75, 65, 45, .05);
+  border-radius:9px;
+  box-shadow:2px 12px 55px #aaa;
+  position:absolute;
+  left:50%;
+  transform: translateX(-50%);  
+}
+
+
+/*菜单*/
+.table{
+  position:absolute;
+  bottom:10px;
+  left:50%;
+  transform: translateX(-50%);
+}
+
+.tab>a{  
+  width:50px;
+  height:50px;
+  border-radius:50px;  
+  background-color:#edd5d1 ;
+  display:block;
+  margin:10px ;
+}
+.tab.active a{
+  color:#48372f;
+  background:#ccc;  
+}
+.tab.active i{
+  color:#fff; 
+}
+.tab:hover a{
+  width:105px;
+  background:rgb(242 , 221 , 222) ;
+  transition:width 0.45s;
+}
+.tab span{  
+  opacity:0; 
+  font-size:16px;
+  line-height:20px;
+  padding:0;
+}
+.tab:hover span{
+  opacity:1;
+  transition:1.8s;
+}
+
+ /*展示*/
+.panel-box{
+  display:none;
+}
+.panel-box.active{
+  display:block;
+  animation:show 2s;
+}
+@keyframes show{
+from {opacity:0.1;}
+to {opacity:1;}
+}
+ /*信息*/
+.head {
+  width:160px;
+  height:160px;
+  border-radius:160px;
+  background:url(https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1492768936428&di=1cf6f0601144ab73cc072d93a9e1e822&imgtype=0&src=http%3A%2F%2Fimg.sj33.cn%2Fuploads%2Fallimg%2F201505%2F1022291355-2.gif) no-repeat center;
+  background-size: 125%;
+  margin:20px auto;
+  border:1px solid #ccc;  
+}
+.name{
+  margin:-40px auto 0px;
+  background:#c7d0f1;
+  width:105px;
+  border-radius:15px;
+ 
+  font-size:18px;
+  text-align:center
+}
+.info{
+  text-align:center;
+  display:flex;
+  justify-content:space-between;
+}
+.info i{
+  font-size:60px;
+  color:#aaa;
+}
+.info li{
+  margin:0 auto;
+}
+.info .title {
+  color:#48372f;
+  font-size:18px;
+  background:#ebe3e0;
+  border-radius:5px;
+  padding:5px;
+  opacity:0.7;
+}
+.info p{
+  margin:5px;
+  background:#ebe3e0;
+  border-radius:5px;
+  padding:5px;
+  
+}
+.qa{
+  background:rgba(137 , 171 , 227,.3);
+  margin:10px auto;
+  border-radius:5px;
+  width:85%;
+  padding:10px;
+}
+.qa span{
+  display:none;
+}
+.answer span.active {
+  display:block;
+  font-size:16px;
+  animation:question 3s forwards;
+}
+.question i.active span{
+  display:inline-block;
+  font-size:16px;
+  animation:question 2s forwards;
+}
+@keyframes question{from {opacity:0;}to {opacity:1;}}
+
+.question i.active{
+  padding-right:5px;
+  background:rgba(137 , 171 , 227,.5);
+  border-radius:15px;  
+}
+
+
+.qa h1{
+  float:left;
+  color:rgba(137 , 171 , 227,.7);
+  font-size:25px;  
+}
+.qa i{
+  margin-left:12px;
+  cursor:pointer;
+}
+.answer.qa {
+  height:40px;
+  opacity:0.7;
+}
+
+
+/*技能*/
+.skill .all{
+  width:450px;
+  height:12px;
+  border-radius:12px;
+  background:#ccc;
+  display:inline-block;
+}
+.skill .half{
+  height:12px;
+  border-radius:12px;
+  background:#edd5d1;
+  display:block;
+  width:0;
+}
+.skill p{
+  font-size:20px;
+  display:inline-block;
+  width:130px;
+  margin-left:5px;
+  
+}
+
+
+.skill li{
+  position:relative;
+  margin:15px;
+}
+.skill{
+  margin:0 auto;
+  display:block;
+  transition:1.8s;
+  padding-left:70px;
+  padding-top:30px;
+}
+.other{
+  background:rgba(137 , 171 , 227,.2);
+  margin-top:-10px;
+  padding:12px 0;
+  border-radius:9px;
+  float:right;
+  width:450px;
+}
+
+.skills{
+  position:absolute;
+  right:0;
+}
+.skill span{
+  padding:5px;
+  margin-left:20px;
+  border-radius:9px;
+  background:rgba(137 , 171 , 227,.3);
+  color:#aaa;
+}
+.skill span:hover{
+    transition-property: background,color,font-size;
+    transition-duration: 0.6s;
+    background:rgba(137 , 171 , 227,.7);
+    color:#202020;
+    font-size:20px;
+}
+
+.html{ animation:html 5s forwards;}
+@keyframes html{from {width:0;}to {width:70%;}}
+
+.css{ animation:css 5s forwards;}
+@keyframes css{from {width:0;}to {width:60%;}}
+
+.js{ animation:js 5s forwards;}
+@keyframes js{from {width:0;}to {width:50%;}}
+
+.jq{ animation:jq 5s forwards;}
+@keyframes jq{from {width:0;}to {width:60%;}}
+
+.ps{ animation:ps 5s forwards;}
+@keyframes ps{from {width:0;}to {width:85%;}}
+
+/*作品*/
+
+.layout{
+  width:85%;
+  margin:0 auto;  
+}
+.bg{
+  margin:10px;
+  padding:5px;
+  border-radius:9px;
+}
+.pro{
+  margin-top:15px;
+  width:50%;  
+}
+
+.pro-name{ 
+  margin:10px;
+  padding:5px;
+  border-radius:9px;
+  font-size:22px;
+  color:#aaa;
+  background:rgba(137 , 171 , 227,.1);
+}
+.pro-name i{
+  margin-right:70px;
+  color:#ccc;
+}
+.pro-name i:hover{
+  color:#000;
+}
+.pro-show{
+  height:110px;
+  margin:10px;
+  padding:2px;
+  border-radius:9px;
+  background:rgba(137 , 171 , 227,.3);
+}
+.pro-show p{
+  display:none;
+}
+.pro-show:hover  p{
+  
+  height:100%;
+  width:100%;
+  border-radius:9px;
+  display:block;
+  background:rgba(0 , 0 , 0,.05);
+}
+.pro-show:hover i{
+  font-size:40px;
+  vertical-align:middle;
+  margin:40%;
+  line-height:110px;
+}
+.pro-introduce{  
+  margin:10px;
+  padding:5px;
+  border-radius:9px;
+  background:rgba(137 , 171 , 227,.3);
+}
+.pro-show:nth-child(1){
+  background:url(./src/1.jpg)no-repeat center;  
+}
+.pro-show:nth-child(2){
+  background:url(./src/2.jpg)no-repeat center;  
+}
+.pro-show:nth-child(3){
+  background:url(./src/3.jpg)no-repeat center;  
+}
+.pro-show:nth-child(4){
+  background:url(./src/todolist.jpg)no-repeat center;  
+}
+
+
+/*联系*/
+.tel{
+  color:rgb(128,64,0);
+  font-size:20px;
+  background:rgba(137 , 171 , 227,.3);
+  padding:10px;
+}
+.tel p{
+  line-height:25px;
+}
+.wechat{
+  width:29%;
+}
+.qq{
+  width:29%;
+}
+.call{
+  margin-top:30px;
+}
+#myform .bk{
+   background:rgba(137 , 171 , 227,.3);
+  padding:10px;
+  border-radius:5px;
+  border:none;
+  width:92%;
+  margin:0 0 15px 10px;
+  
+}
+
+#myform .btn{
+  margin-right:25px;
+  padding:5px;
+  border-radius:5px;
+  background:rgba(137 , 171 , 227,.6);
+  border:none;
+  color:rgb(128,64,0);
+  float:right;
+}
+#myform .btn:hover{
+  background:rgba(137 , 171 , 227,1);
+  cursor:pointer;
+}
+#myform p{
+  color:rgba(128,64,0,.8);
+  font-size:16px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
