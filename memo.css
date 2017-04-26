@@ -27,11 +27,11 @@ ul:after{
 
 @font-face {
   font-family: 'iconfont';  /* project id 284139 */
-  src: url('http://at.alicdn.com/t/font_6exs10ch115opqfr.eot');
-  src: url('http://at.alicdn.com/t/font_6exs10ch115opqfr.eot?#iefix') format('embedded-opentype'),
-  url('http://at.alicdn.com/t/font_6exs10ch115opqfr.woff') format('woff'),
-  url('http://at.alicdn.com/t/font_6exs10ch115opqfr.ttf') format('truetype'),
-  url('http://at.alicdn.com/t/font_6exs10ch115opqfr.svg#iconfont') format('svg');
+  src: url('https://at.alicdn.com/t/font_6exs10ch115opqfr.eot');
+  src: url('https://at.alicdn.com/t/font_6exs10ch115opqfr.eot?#iefix') format('embedded-opentype'),
+  url('https://at.alicdn.com/t/font_6exs10ch115opqfr.woff') format('woff'),
+  url('https://at.alicdn.com/t/font_6exs10ch115opqfr.ttf') format('truetype'),
+  url('https://at.alicdn.com/t/font_6exs10ch115opqfr.svg#iconfont') format('svg');
 }
 .iconfont{
     font-family:"iconfont" !important;
@@ -333,13 +333,14 @@ to {opacity:1;}
   width:100%;
   border-radius:9px;
   display:block;
-  background:rgba(0 , 0 , 0,.05);
+  background:rgba(0 , 0 , 0,.5);
 }
 .pro-show:hover i{
   font-size:40px;
   vertical-align:middle;
   margin:40%;
   line-height:110px;
+  color:#fff;
 }
 .pro-introduce{  
   margin:10px;
@@ -348,10 +349,10 @@ to {opacity:1;}
   background:rgba(137 , 171 , 227,.3);
 }
 .pro-show:nth-child(1){
-  background:url(https://github.com/memo1607/resume/blob/master/img/1.jpg?raw=true)no-repeat center;  
+  background:url(img/1.jpg)no-repeat center;  
 }
 .pro-show:nth-child(2){
-  background:url(https://github.com/memo1607/resume/blob/master/img/2.jpg?raw=true)no-repeat center;  
+  background:url(./img/2.jpg)no-repeat center;  
 }
 .pro-show:nth-child(3){
   background:url(https://github.com/memo1607/resume/blob/master/img/3.jpg?raw=true)no-repeat center;  
