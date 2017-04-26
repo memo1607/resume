@@ -349,16 +349,20 @@ to {opacity:1;}
   background:rgba(137 , 171 , 227,.3);
 }
 .pro-show:nth-child(1){
-  background:url(img/1.jpg)no-repeat center;  
+  background:url(img/1.jpg)no-repeat center;
+  background-size:cover;  
 }
 .pro-show:nth-child(2){
-  background:url(./img/2.jpg)no-repeat center;  
+  background:url(./img/2.jpg)no-repeat center;
+  background-size:cover;  
 }
 .pro-show:nth-child(3){
-  background:url(https://github.com/memo1607/resume/blob/master/img/3.jpg?raw=true)no-repeat center;  
+  background:url(/img/3.jpg)no-repeat center; 
+  background-size:cover;  
 }
 .pro-show:nth-child(4){
-  background:url(https://github.com/memo1607/resume/blob/master/img/todolist.jpg?raw=true)no-repeat center;  
+  background:url(/img/todolist.jpg)no-repeat center; 
+  background-size:cover;  
 }
 .call img{
 
@@ -376,17 +380,19 @@ to {opacity:1;}
 }
 .wechat{
   width:29%;
-  background:url(https://github.com/memo1607/resume/blob/master/img/weChat.jpg?raw=true )no-repeat ;
+  background:url(/img/weChat.jpg)no-repeat ;
+  background-size:cover;
 }
 .qq{
   width:29%;
-  background:url( https://github.com/memo1607/resume/blob/master/img/qq.img?raw=true)no-repeat ; 
+  background:url( /img/qq.img)no-repeat ; 
+  background-size:cover;
 }
 .call{
   margin-top:30px;
 }
 #myform .bk{
-   background:rgba(137 , 171 , 227,.3);
+  background:rgba(137 , 171 , 227,.3);
   padding:10px;
   border-radius:5px;
   border:none;
