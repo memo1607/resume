@@ -348,18 +348,20 @@ to {opacity:1;}
   background:rgba(137 , 171 , 227,.3);
 }
 .pro-show:nth-child(1){
-  background:url(./src/1.jpg)no-repeat center;  
+  background:url(https://github.com/memo1607/resume/blob/master/img/1.jpg)no-repeat center;  
 }
 .pro-show:nth-child(2){
-  background:url(./src/2.jpg)no-repeat center;  
+  background:url(https://github.com/memo1607/resume/blob/master/img/2.jpg)no-repeat center;  
 }
 .pro-show:nth-child(3){
-  background:url(./src/3.jpg)no-repeat center;  
+  background:url(https://github.com/memo1607/resume/blob/master/img/3.jpg)no-repeat center;  
 }
 .pro-show:nth-child(4){
-  background:url(./src/todolist.jpg)no-repeat center;  
+  background:url(https://github.com/memo1607/resume/blob/master/img/todolist.jpg)no-repeat center;  
 }
+.call img{
 
+}
 
 /*联系*/
 .tel{
@@ -373,9 +375,11 @@ to {opacity:1;}
 }
 .wechat{
   width:29%;
+  background:url(https://github.com/memo1607/resume/blob/master/img/weChat.jpg )no-repeat ;
 }
 .qq{
   width:29%;
+  background:url( https://github.com/memo1607/resume/blob/master/img/qq.img)no-repeat ; 
 }
 .call{
   margin-top:30px;
