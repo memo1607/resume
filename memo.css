@@ -322,7 +322,7 @@ to {opacity:1;}
   margin:10px;
   padding:2px;
   border-radius:9px;
-  background:rgba(137 , 171 , 227,.3);
+  background:rgba(255 , 239 , 213,0.35);
 }
 .pro-show p{
   display:none;
@@ -333,7 +333,7 @@ to {opacity:1;}
   width:100%;
   border-radius:9px;
   display:block;
-  background:rgba(0 , 0 , 0,.5);
+  background:rgba(f , f , f,.5);
 }
 .pro-show:hover i{
   font-size:40px;
@@ -352,15 +352,15 @@ to {opacity:1;}
   background:url(img/1.jpg)no-repeat center;
   background-size:cover;  
 }
-.pro-show:nth-child(2){
+.bootstarp{
   background:url(./img/2.jpg)no-repeat center;
   background-size:cover;  
 }
-.pro-show:nth-child(3){
+.carousel{
   background:url(/img/3.jpg)no-repeat center; 
   background-size:cover;  
 }
-.pro-show:nth-child(4){
+.todo{
   background:url(/img/todolist.jpg)no-repeat center; 
   background-size:cover;  
 }
@@ -385,7 +385,7 @@ to {opacity:1;}
 }
 .qq{
   width:29%;
-  background:url( /img/qq.img)no-repeat ; 
+  background:url(/img/qq.img)no-repeat ; 
   background-size:cover;
 }
 .call{
