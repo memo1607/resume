@@ -380,12 +380,14 @@ to {opacity:1;}
 }
 .wechat{
   width:29%;
-  background:url(./img/weChat.jpg)no-repeat ;
+  height:80px;
+  background:url(./img/weChat.jpg)no-repeat center;
   background-size:cover;
 }
 .qq{
   width:29%;
-  background:url(./img/qq.img)no-repeat ; 
+  height:80px;
+  background:url(./img/qq.img)no-repeat center; 
   background-size:cover;
 }
 .call{
