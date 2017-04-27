@@ -333,7 +333,7 @@ to {opacity:1;}
   width:100%;
   border-radius:9px;
   display:block;
-  background:rgba(255 , 239 , 213,0.35);
+  background:rgba(255 , 239 , 213,0.5);
 }
 .pro-show:hover i{
   font-size:40px;
@@ -380,15 +380,15 @@ to {opacity:1;}
 }
 .wechat{
   width:29%;
-  height:80px;
-  background:url(./img/weChat.jpg)no-repeat center;
-  background-size:cover;
+  
+  background:url(./img/weChat.jpg)no-repeat ;
+  background-size:c95px;
 }
 .qq{
   width:29%;
-  height:80px;
-  background:url(./img/qq.img)no-repeat center; 
-  background-size:cover;
+  
+  background:url(./img/qq.img)no-repeat; 
+  background-size:95px;
 }
 .call{
   margin-top:30px;
