@@ -348,7 +348,7 @@ to {opacity:1;}
   border-radius:9px;
   background:rgba(137 , 171 , 227,.3);
 }
-.pro-show:nth-child(1){
+.ww{
   background:url(img/1.jpg)no-repeat center;
   background-size:cover;  
 }
