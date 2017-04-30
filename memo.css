@@ -284,7 +284,7 @@ to {opacity:1;}
 @keyframes jq{from {width:0;}to {width:60%;}}
 
 .ps{ animation:ps 5s forwards;}
-@keyframes ps{from {width:0;}to {width:85%;}}
+@keyframes ps{from {width:0;}to {width:50%;}}
 
 /*作品*/
 
